@@ -70,11 +70,17 @@ app.get("/exam/test",function(req,res){
     res.render("test");
 });
 
-// response to "/exam/test1" route
-// app.get("/exam/test1",function(req,res){
-//   console.log("subject test page");
-//   res.render("test1");
-// });
+// response to "/exam/thank" route
+app.get("/exam/thank",function(req,res){
+  console.log("thank you page");
+  res.render("thank");
+});
+
+// response to "/result/marks" route
+app.get("/result/marks", function(req,res){
+  console.log("marks of particular subject.");
+  res.render("marks");
+});
 
 //response of "/logout" route
 app.get("/logout",function(req,res){
