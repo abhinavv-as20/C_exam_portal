@@ -102,7 +102,7 @@ app.post("/login", function(req, res){
     });
 });
 
-//response of "/about" route
+//response of "/homescreen" route
 app.get("/homescreen", function(req, res){
   console.log("homescreen page");
     res.render("homescreen");
